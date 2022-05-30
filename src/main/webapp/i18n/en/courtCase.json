@@ -1,0 +1,31 @@
+{
+  "employeeResigtrationSystemApp": {
+    "courtCase": {
+      "home": {
+        "title": "Court Cases",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Court Case",
+        "createOrEditLabel": "Create or edit a Court Case",
+        "notFound": "No Court Cases found"
+      },
+      "created": "A new Court Case is created with identifier {{ param }}",
+      "updated": "A Court Case is updated with identifier {{ param }}",
+      "deleted": "A Court Case is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Court Case {{ id }}?"
+      },
+      "detail": {
+        "title": "Court Case"
+      },
+      "id": "ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "address": "Address",
+      "contactNo": "Contact No",
+      "emailAddress": "Email Address",
+      "salary": "Salary",
+      "gstOnSalary": "Gst On Salary",
+      "lastModified": "Last Modified"
+    }
+  }
+}

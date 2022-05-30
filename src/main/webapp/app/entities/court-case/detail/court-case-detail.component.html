@@ -1,0 +1,60 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="courtCase">
+      <h2 data-cy="courtCaseDetailsHeading"><span jhiTranslate="employeeResigtrationSystemApp.courtCase.detail.title">Court Case</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ courtCase.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="employeeResigtrationSystemApp.courtCase.firstName">First Name</span></dt>
+        <dd>
+          <span>{{ courtCase.firstName }}</span>
+        </dd>
+        <dt><span jhiTranslate="employeeResigtrationSystemApp.courtCase.lastName">Last Name</span></dt>
+        <dd>
+          <span>{{ courtCase.lastName }}</span>
+        </dd>
+        <dt><span jhiTranslate="employeeResigtrationSystemApp.courtCase.address">Address</span></dt>
+        <dd>
+          <span>{{ courtCase.address }}</span>
+        </dd>
+        <dt><span jhiTranslate="employeeResigtrationSystemApp.courtCase.contactNo">Contact No</span></dt>
+        <dd>
+          <span>{{ courtCase.contactNo }}</span>
+        </dd>
+        <dt><span jhiTranslate="employeeResigtrationSystemApp.courtCase.emailAddress">Email Address</span></dt>
+        <dd>
+          <span>{{ courtCase.emailAddress }}</span>
+        </dd>
+        <dt><span jhiTranslate="employeeResigtrationSystemApp.courtCase.salary">Salary</span></dt>
+        <dd>
+          <span>{{ courtCase.salary }}</span>
+        </dd>
+        <dt><span jhiTranslate="employeeResigtrationSystemApp.courtCase.gstOnSalary">Gst On Salary</span></dt>
+        <dd>
+          <span>{{ courtCase.gstOnSalary }}</span>
+        </dd>
+        <dt><span jhiTranslate="employeeResigtrationSystemApp.courtCase.lastModified">Last Modified</span></dt>
+        <dd>
+          <span>{{ courtCase.lastModified }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/court-case', courtCase.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>
